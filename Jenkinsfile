@@ -20,7 +20,7 @@ pipeline {
                                   usernameVariable: 'USERNAME',
                                   passwordVariable: 'PASSWORD']]) {
 
-                    sh 'cf login -a http://api.run.pivotal.io -u $USERNAME -p $PASSWORD'
+                    sh 'cf login -a https://api.w3ibm.bluemix.net -u $USERNAME -p $PASSWORD'
                     sh 'cf push'
                 }
             }
